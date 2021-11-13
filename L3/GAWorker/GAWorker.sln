@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAWorker", "GAWorker\GAWorker.csproj", "{FF814549-98DC-4C3E-B655-4D1DAD62D288}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF814549-98DC-4C3E-B655-4D1DAD62D288}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF814549-98DC-4C3E-B655-4D1DAD62D288}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF814549-98DC-4C3E-B655-4D1DAD62D288}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF814549-98DC-4C3E-B655-4D1DAD62D288}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D883501-A431-429C-88E9-C93C15D8DDD4}
+	EndGlobalSection
+EndGlobal

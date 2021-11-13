@@ -1,0 +1,13 @@
+bin/
+obj/
+*.user
+*.lock.json
+*.suo
+.vs/
+artifacts/
+.paket/paket.exe
+.vscode/
+.fake/
+Packages/
+tools/
+**/appsettings.Development.json
