@@ -1,0 +1,35 @@
+networks:
+  hsa7:
+    driver: bridge
+    name: hsa7_stack
+
+services:
+  nginx_static:
+    image: nginx:latest
+    container_name: nginx_static
+    networks:
+      hsa7:
+        aliases:
+          - nginx_static.local
+    volumes:
+      - ./nginx_static.conf:/etc/nginx/nginx.conf
+      - ./images:/usr/share/nginx/images
+
+  nginx:
+    image: home/nginx
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8800:80"
+    networks:
+      hsa7:
+        aliases:
+          - nginx.local
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./cache:/data/nginx/cache
+      - ./purge.lua:/usr/share/nginx/lua/purge.lua
+    depends_on:
+      - nginx_static
